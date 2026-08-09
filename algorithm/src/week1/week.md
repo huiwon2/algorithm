@@ -13,7 +13,7 @@
 | [ ] | D1 (하) | SWEA | [21936] 길이가 M인 회문 찾기 | [Link](https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do?contestProbId=AZFkKmLa1zEDFAQW&categoryId=AZFkKmLa1zEDFAQW&categoryType=CODE) |
 | [ ] | D1 (하) | SWEA | [22375] 스위치 조작 | [Link]() |
 | [ ] | D1 (하) | SWEA | [23795] 우주 괴물 | [Link]() |
-| [ ] | D2 (하) | SWEA | [12712] 파리 퇴치3 | [Link]() |
+| [ ] | D2 (하) | SWEA | [12712] 파리 퇴치3 | [Link](https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do?contestProbId=AXuARWAqDkQDFARa&categoryId=AXuARWAqDkQDFARa&categoryType=CODE) |
 | [ ] | D2 (하~중) | SWEA | [26059] 과일 등급 분류 | [Link]() |
 | [ ] | D3 (하~중) | SWEA | [10761] 신뢰 | [Link]() |
 
