@@ -1,6 +1,6 @@
 package week1;
 import java.util.Scanner;
-// ¿ìÁÖ ±«¹°
+// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 public class d1_23795 {
 	
 	public static void main(String[] args) {
@@ -9,10 +9,10 @@ public class d1_23795 {
 		T = sc.nextInt();
 		for(int test_case = 1; test_case <= T; test_case++)
 		{
-			// Ä­ ¼ö ÀÔ·Â
+			// ì¹¸ ìˆ˜ ì…ë ¥
 			int N = sc.nextInt();
 			
-			// N*N ¹è¿­ ÀÔ·Â
+			// N*N ë°°ì—´ ì…ë ¥
 			int[][] array = new int[N][N];
 			for(int i = 0; i < N; i++) {
 				for(int j = 0; j < N; j++) {
@@ -20,11 +20,11 @@ public class d1_23795 {
 				}
 			}
 			
-			// ¾ÈÀüÇÑ Ä­ count
+			// ì•ˆì „í•œ ì¹¸ count
 			int count = 0;
 			
-			// 0Àº ºó Ä­, 1Àº º®, 2´Â ±«¹°
-			// 1) ±«¹° Ã£±â(index ÀúÀå)
+			// 0ì€ ë¹ˆ ì¹¸, 1ì€ ë²½, 2ëŠ” ê´´ë¬¼
+			// 1) ê´´ë¬¼ ì°¾ê¸°(index ì €ì¥)
 			int i_index = -1;
 			int j_index = -1;
 			
@@ -39,17 +39,17 @@ public class d1_23795 {
 				}
 			}
 			
-			// 2) ±«¹° À§Ä¡¸¦ ±âÁØÀ¸·Î 0 -> 2·Î ¼öÁ¤
-			// »ó/ÇÏ/ÁÂ/¿ì ¹æÇâ ¹è¿­
+			// 2) ê´´ë¬¼ ìœ„ì¹˜ë¥¼ ê¸°ì¤€ìœ¼ë¡œ 0 -> 2ë¡œ ìˆ˜ì •
+			// ìƒ/í•˜/ì¢Œ/ìš° ë°©í–¥ ë°°ì—´
 			int[] dx = {-1, 1, 0, 0};
 			int[] dy = {0, 0, -1, 1};
 			
-			// »ó/ÇÏ/ÁÂ/¿ì È®Àå
+			// ìƒ/í•˜/ì¢Œ/ìš° í™•ì¥
 			for(int d = 0; d < 4; d++) {
 				int next_i = i_index + dx[d];
 				int next_j = j_index + dy[d];
 				
-				// ¹üÀ§¸¦ ¹ş¾î³ªÁö ¾Ê°í, º®À» ¸¸³ªÁö ¾ÊÀ» ¶§±îÁö Á÷Áø
+				// ë²”ìœ„ë¥¼ ë²—ì–´ë‚˜ì§€ ì•Šê³ , ë²½ì„ ë§Œë‚˜ì§€ ì•Šì„ ë•Œê¹Œì§€ ì§ì§„
 				while(next_i >= 0 && next_i < array.length && next_j >= 0 && next_j < array.length) {
 					if(array[next_i][next_j] == 1) {
 						break;
@@ -58,13 +58,13 @@ public class d1_23795 {
 						array[next_i][next_j] = 2;
 					}
 					
-					// ÇÑÄ­ ´õ ÀÌµ¿
+					// í•œì¹¸ ë” ì´ë™
 					next_i += dx[d];
 					next_j += dy[d];
 				}
 			}
 			
-			// 3) ÀüÃ¼ ¹è¿­¿¡¼­ 0°ªÀ» count
+			// 3) ì „ì²´ ë°°ì—´ì—ì„œ 0ê°’ì„ count
 			for(int i = 0; i < array.length; i++) {
 				for(int j = 0; j < array[i].length; j++) {
 					if(array[i][j] == 0) {
