@@ -69,5 +69,6 @@ public class d2_12712 {
 
 
         }
+        sc.close();
     }
 }
