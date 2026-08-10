@@ -1,8 +1,8 @@
 package week1;
 import java.util.Scanner;
-
+// 스위치 조작
 public class d1_22375 {
-
+	
 	public static void main(String[] args) throws Exception{
 		Scanner sc = new Scanner(System.in);
 		int T;
