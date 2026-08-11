@@ -1,7 +1,7 @@
 package week1;
 import java.util.Scanner;
 public class d2_26059 {
-
+	// Í≥ºÏùº Îì±Í∏â Î∂ÑÎ•ò
 	public static void main(String[] args) throws Exception{
 		Scanner sc = new Scanner(System.in);
 		int T;
@@ -9,17 +9,17 @@ public class d2_26059 {
         
         for(int test_case = 1; test_case <= T; test_case++)
         {
-        	// ∞˙¿œ¿« ∞≥ºˆ
+        	// Í≥ºÏùºÏùò Í∞úÏàò
         	int N = sc.nextInt();
-        	// √÷º“ ∞≥ºˆ
+        	// ÏµúÏÜå Í∞úÏàò
         	int lo = sc.nextInt();
-        	// √÷¥Î ∞≥ºˆ
+        	// ÏµúÎåÄ Í∞úÏàò
         	int hi = sc.nextInt();
         	
-        	// ¬˜¿Ã(return)
+        	// Ï∞®Ïù¥(return)
         	int diff = -1;
         	
-        	// ∞˙¿œ πËø≠
+        	// Í≥ºÏùº Î∞∞Ïó¥ ÏûÖÎ†•
         	int[] fruits = new int[N];
         	for(int i = 0; i < N; i++) {
         		fruits[i] = sc.nextInt();

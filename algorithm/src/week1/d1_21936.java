@@ -1,7 +1,7 @@
 package week1;
 import java.util.Scanner;
 //import java.io.FileInputStream;
-// ±æÀÌ°¡ mÀÎ È¸¹® Ã£±â
+// ê¸¸ì´ê°€ mì¸ íšŒë¬¸ ì°¾ê¸°
 public class d1_21936 {
 
 	public static void main(String[] args) throws Exception{
@@ -11,33 +11,33 @@ public class d1_21936 {
 		
 		for(int test_case = 1; test_case <= T; test_case++)
 		{
-			// ¹®ÀÚ¿­ ±æÀÌ ÀÔ·Â
+			// ë¬¸ìì—´ ê¸¸ì´ ì…ë ¥
 			int N = sc.nextInt();
 			
-			// È¸¹® ±æÀÌ ÀÔ·Â
+			// íšŒë¬¸ ê¸¸ì´ ì…ë ¥
 			int M = sc.nextInt();
 			
-			// ¹®ÀÚ¿­ ÀÔ·Â
+			// ë¬¸ìì—´ ì…ë ¥
 			String s = sc.next();
 			
 			if(s.length() > N) {
 				s = s.substring(0, N);
 			}
 			
-			// ¹İÈ¯ ¹®ÀÚ¿­
+			// ë°˜í™˜ ë¬¸ìì—´
 			String result = "";
 			
-			// È¸¹® Ã£±â start
+			// íšŒë¬¸ ì°¾ê¸° start
 			for(int i = 0; i < s.length(); i++) {
 				if(!result.isEmpty()) {
 					break;
 				}
-				// substring »ı¼º(ÁÖÀÇ : ±æÀÌ Á¦ÇÑ)
+				// substring ìƒì„±(ì£¼ì˜ : ê¸¸ì´ ì œí•œ)
 				if(i + M <= s.length()) {
 					String sub = s.substring(i, i + M);
 					int left = 0;
 					int right = sub.length() - 1;
-					// È¸¹® ºñ±³ start
+					// È¸ï¿½ï¿½ ï¿½ï¿½ start
 					while(result.length() < sub.length()) {
 						if(sub.charAt(left) == sub.charAt(right)) {
 							result += sub.charAt(left);
@@ -50,7 +50,7 @@ public class d1_21936 {
 				}
 			}
 			
-			// ¹İÈ¯ ¹®ÀÚ¿­ÀÌ ºñ¾îÀÖ´Ù¸é -> none Ã³¸®
+			// ë°˜í™˜ ë¬¸ìì—´ì´ ë¹„ì–´ìˆë‹¤ë©´ -> none ì²˜ë¦¬
 			if(result.isEmpty()) {
 				result += "NONE";
 			}

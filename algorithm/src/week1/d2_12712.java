@@ -1,6 +1,6 @@
 package week1;
 import java.util.Scanner;
-// ÆÄ¸®ÅðÄ¡ 3
+//íŒŒë¦¬í‡´ì¹˜ 3
 public class d2_12712 {
 	public static void main(String args[]) throws Exception{
         Scanner sc = new Scanner(System.in);
@@ -9,9 +9,9 @@ public class d2_12712 {
 
         for(int test_case = 1; test_case <= T; test_case++)
         {
-            // ¹è¿­ ¼ö
+            // ë°°ì—´ ìˆ˜
             int N = sc.nextInt();
-            // ºÐ»ç ¼¼±â
+            // ë¶„ì‚¬ ì„¸ê¸°
             int M = sc.nextInt();
             int sum = 0;
 
@@ -22,7 +22,7 @@ public class d2_12712 {
                 }
             }
 
-            // + ÇüÅÂ
+            // + í˜•íƒœ
             int[] dr = { -1, 1, 0, 0 };
             int[] dc = { 0, 0, 1, -1 };
             for (int r = 0; r < N; r++) {
@@ -44,7 +44,7 @@ public class d2_12712 {
                 }
             }
 
-            // x ÇüÅÂ
+            // x í˜•íƒœ
             int[] drx = { -1, 1, -1, 1 };
             int[] dcx = { -1, 1, 1, -1 };
             for (int r = 0; r < N; r++) {

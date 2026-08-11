@@ -1,6 +1,6 @@
 package week1;
 import java.util.Scanner;
-// ���� ����
+// 우주 괴물
 public class d1_23795 {
 	
 	public static void main(String[] args) {

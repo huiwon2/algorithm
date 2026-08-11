@@ -1,6 +1,6 @@
 package week1;
 import java.util.Scanner;
-// ½ºÀ§Ä¡ Á¶ÀÛ
+// ìŠ¤ìœ„ì¹˜ ì¡°ìž‘
 public class d1_22375 {
 	
 	public static void main(String[] args) throws Exception{
@@ -9,28 +9,28 @@ public class d1_22375 {
 		T = sc.nextInt();
 		for(int test_case = 1; test_case <= T; test_case++)
 		{
-			// ½ºÀ§Ä¡ °³¼ö
+			// ìŠ¤ìœ„ì¹˜ ê°œìˆ˜
 			int N = sc.nextInt();
 			
-			// Á¶ÀÛ Àü ½ºÀ§Ä¡ »óÅÂ
+			// ì¡°ìž‘ ì „ ìŠ¤ìœ„ì¹˜ ìƒíƒœ
 			int[] Ai = new int[N];
 			
-			// Á¶ÀÛ ÈÄ ½ºÀ§Ä¡ »óÅÂ
+			// ì¡°ìž‘ í›„ ìŠ¤ìœ„ì¹˜ ìƒíƒœ
 			int[] Bi = new int[N];
 			
-			// Ai ÀÔ·Â
+			// Ai ìž…ë ¥
 			for(int i = 0; i < N; i++) {
 				Ai[i] = sc.nextInt();
 			}
-			// Bi ÀÔ·Â
+			// Bi ìž…ë ¥
 			for(int i = 0; i < N; i++) {
 				Bi[i] = sc.nextInt();
 			}
 			
-			// count(Á¶ÀÛ È½¼ö)
+			// count(ì¡°ìž‘ íšŸìˆ˜)
 			int count = 0;
 			
-			// Ai¿Í Bi ºñ±³ -> ´Ù¸¦ ½Ã Ai °ª ¹Ù²Ù±â -> ¹Ýº¹
+			// Aiì™€ Bi ë¹„êµ -> ë‹¤ë¥¼ ì‹œ Ai ê°’ ë°”ê¾¸ê¸° -> ë°˜ë³µ
 			for(int i = 0; i < N; i++) {
 				if(Ai[i] == Bi[i]) {
 					continue;
