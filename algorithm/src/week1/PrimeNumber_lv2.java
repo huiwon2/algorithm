@@ -27,10 +27,10 @@ public class PrimeNumber_lv2 {
 		// 배열의 값으로 소수 판별
 		for(int num : numberSet){
 			if(isPrime(num)) {
+				// 소수일 때 answer++
 				answer ++;
 			}
 		}
-		// 소수일 때 answer++
 		
 		return answer;
 	}
