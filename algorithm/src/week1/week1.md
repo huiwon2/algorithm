@@ -28,7 +28,7 @@
 | [ ] | Lv.1 (하) | Programmers | 최소 직사각형 | [Link]() |
 | [ ] | D4 (중) | SWEA | [1767] 프로세서 연결하기 | [Link]() |
 | [ ] | D4 (중) | SWEA | [5656] 벽돌 깨기 | [Link]() |
-| [ ] | Lv.2 (중) | Programmers | 소수 찾기 *(itertools 미사용)* | [Link]() |
+| [ ] | Lv.2 (중) | Programmers | 소수 찾기 *(itertools 미사용)* | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/42839?language=java) |
 | [ ] | Lv.2 (중) | Programmers | 피로도 *(itertools 미사용)* | [Link]() |
 
 ---
