@@ -37,7 +37,7 @@ public class d1_21936 {
 					String sub = s.substring(i, i + M);
 					int left = 0;
 					int right = sub.length() - 1;
-					// ȸ�� �� start
+					// 회문 비교 start
 					while(result.length() < sub.length()) {
 						if(sub.charAt(left) == sub.charAt(right)) {
 							result += sub.charAt(left);
