@@ -39,6 +39,8 @@ public class PrimeNumber_lv2 {
 	private static void generateCombinations(String current, String numbers, boolean[] visited){
 		if(!current.isEmpty()) {
 			numberSet.add(Integer.parseInt(current));
+			// add가 어떤 방식으로 되는지 확인
+			System.out.println(numberSet);
 		}
 		
 		// 모든 자릿수에 재귀 호출 
