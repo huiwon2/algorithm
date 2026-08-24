@@ -27,6 +27,7 @@ public class d2_14510 {
 			for(int i = 0; i < N; i++) {
 				// 차이값 계산 
 				int diff = tree_max - tree[i];
+				// 차이 중 odd로 계산 하는 일자가 빠른지, even으로 계산하는 일자가 빠른지 확인
 				odd += diff % 2;
 				even += diff / 2;
 			}
