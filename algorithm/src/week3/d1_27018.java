@@ -10,6 +10,11 @@ public class d1_27018 {
 		T = sc.nextInt();
 		for(int test_case = 1; test_case <= T; test_case++)
 		{
+			// 자릿수
+			int D = sc.nextInt();
+			// 총합
+			int S = sc.nextInt();
+			
 			
 		}
 		sc.close();
