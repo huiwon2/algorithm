@@ -6,7 +6,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class d2_5102 {
-	// 노드의 거리 
+	 // 노드의 거리 
 	static ArrayList<ArrayList<Integer>> graph;
 	static int[] distance;
 	static boolean[] checked;
@@ -20,7 +20,7 @@ public class d2_5102 {
 		checked[start] = true;
 		distance[start] = 0;
 		queue.offer(start);
-		
+			
 		while(!queue.isEmpty()) {
 			int current = queue.poll();
 			for(int next : graph.get(current)) {
@@ -32,7 +32,6 @@ public class d2_5102 {
 					if(next == end) {
 						return distance[next];
 					}
-					
 					queue.offer(next);
 				}
 			}
@@ -43,34 +42,33 @@ public class d2_5102 {
 		Scanner sc = new Scanner(System.in);
 		int T;
 		T = sc.nextInt();
-		for(int test_case = 1; test_case <= T; test_case++)
-		{
+		for(int test_case = 1; test_case <= T; test_case++){
 			// node
 			int N = sc.nextInt();
 			// edge
 			int E = sc.nextInt();
-			
+				
 			graph = new ArrayList<ArrayList<Integer>>();
 			for(int i = 0; i < N+1; i++) {
 				graph.add(new ArrayList<Integer>());
 			}
 			distance = new int[N+1];
 			checked = new boolean[N+1];
-			
+				
 			for(int i = 0; i < E; i++) {
 				int a = sc.nextInt();
 				int b = sc.nextInt();
 				graph.get(a).add(b);
-				graph.get(b).get(a);
+				graph.get(b).add(a);
 			}
-			
+				
 			// start and end
 			int S = sc.nextInt();
 			int G = sc.nextInt();
-			
+				
 			// S => G까지 가는 최소 distance 반환(BFS) 
 			int answer = BFS(S, G);
-			
+				
 			System.out.println("#" + test_case + " " + answer);
 		}
 		sc.close();
