@@ -5,10 +5,7 @@ import java.util.Scanner;
 
 public class CodersPass_Level4_1146 {
 	// 연결 요소의 개수
-	static int N = 0;
-    static int M = 0;
     static ArrayList<ArrayList<Integer>> graph;
-    static int answer = 0;
     static boolean[] checked;
     private static int DFS(int v) {
     	int count = 1;
@@ -24,9 +21,9 @@ public class CodersPass_Level4_1146 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		// 정점의 개수
-		N = sc.nextInt();
+		int N = sc.nextInt();
 		// 간선의 개수
-		M = sc.nextInt();
+		int M = sc.nextInt();
 		
 		graph = new ArrayList<ArrayList<Integer>>();
 		for(int i = 0; i < N+1; i++) {
