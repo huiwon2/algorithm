@@ -6,7 +6,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class d2_5102 {
-	 // 노드의 거리 
+	// 노드의 거리 
 	static ArrayList<ArrayList<Integer>> graph;
 	static int[] distance;
 	static boolean[] checked;
