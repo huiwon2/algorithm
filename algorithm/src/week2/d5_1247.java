@@ -13,8 +13,11 @@ public class d5_1247 {
 		if(distanceSum >= minDistance) {
 			return;
 		}
+		// Pruning(count가 n과 같을 때)
 		if(count == N) {
-			int finalDistance = distanceSum + getDistance(current, N+1);
+			// 마지막 위치에서 집(1)으로 가는 거리가 필요했음(내가 마주친 오류)
+			// 이상한 N+1로 가버림..
+			int finalDistance = distanceSum + getDistance(current, 1);
 			minDistance = Math.min(minDistance, finalDistance);
 			return;
 		}
@@ -31,7 +34,7 @@ public class d5_1247 {
 	}
 	// 두 좌표 사이의 거리
 	static int getDistance(int point1, int point2) {
-		// (x1 - x2) + (y1 - y2)
+		// abs(x1 - x2) + abs(y1 - y2) <- 문제에서 제공한 거리
 		return Math.abs(points[point1][0] - points[point2][0]) + Math.abs(points[point1][1] - points[point2][1]);
 	}
 	public static void main(String[] args) {
@@ -40,6 +43,7 @@ public class d5_1247 {
 		T = sc.nextInt();
 		for(int test_case = 1; test_case <= T; test_case++) {
 			N = sc.nextInt();
+			// 회사 좌표와 집 좌표, N개의 좌표 필요
 			points = new int[N + 2][2];
 			checked = new boolean[N + 2];
 			//회사 좌표
