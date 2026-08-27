@@ -60,7 +60,7 @@ public class d5_1247 {
 			}
 			
 			minDistance = Integer.MAX_VALUE;
-			// DFS 호출 
+			// DFS 호출 (현재 위치, 고객 방문 수, 현재 sum(한번도 가지 않았으니 0))
 			DFS(0, 0, 0);
 			System.out.println("#" + test_case + " " + minDistance);
 		}
