@@ -57,7 +57,7 @@ public class d2_26930 {
 				// 그것도 올바른 괄호라고 볼 수 없음
 				char top = stack.pop();
 				if((ch == ')' && top != '(') || (ch == '}' && top != '{')) {
-						return 0;
+					return 0;
 				}
 				
 			}
