@@ -27,7 +27,7 @@ public class d3_6808 {
 			if(!isGyuyoung[i] && !visited[i]) {
 				visited[i] = true;
 				// 인영이가 낼 카드에 배치 
-				inyoungOrder[depth] = 1;
+				inyoungOrder[depth] = i;
 				permutation(depth + 1);
 				// 원상복구(순열로 경우의 수를 따져야 함)
 				visited[i] = false;
