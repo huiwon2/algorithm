@@ -21,9 +21,11 @@ public class d3_6808 {
 			playGame();
 			return;
 		}
+		// inductive rule
 		// 인영이의 카드 순서 배치
 		for(int i = 1; i <= 18; i++) {
 			// 규영이의 카드셋에도 없고, 방문한 적도 없다면 
+			// 인영이의 카드셋이 됨
 			if(!isGyuyoung[i] && !visited[i]) {
 				visited[i] = true;
 				// 인영이가 낼 카드에 배치 
@@ -67,7 +69,7 @@ public class d3_6808 {
 			// for문을 돌면서 규영이의 카드 값을 받고 cards 배열에 1 체크 
 			for(int i = 0; i < 9; i++) {
 				gyuyoungCards[i] = sc.nextInt();
-				// 규영이의 카드 조합이 1로 채워진다. 
+				// 규영이의 카드 조합이 true로 채워진다. 
 				isGyuyoung[gyuyoungCards[i]] = true;
 			}
 			winCount = 0;
