@@ -8,10 +8,10 @@ public class d4_1232 {
 	static char[] tree;
 	static int[] left;
 	static int[] right;
-	static int result;
-	private static double calculator(int node) {
-		if(left[node] == 0 && right[node] == 0) {
-			// root 노드만 있는 경우
+	static double result;
+//	private static double calculator(int node) {
+//		if(left[node] == 0 && right[node] == 0) {
+//			// root 노드만 있는 경우
 //			return tree[node] - '0';
 //			// 후위 순회
 //			double left = calculator(left[node]);
@@ -20,15 +20,17 @@ public class d4_1232 {
 //			// 연산자로 두 자식의 결합 결과
 //			char op = tree[node];
 //			switch(op) {
-//			case '+' :
-//				result = left + right;
-//				return
+//				case '+' :{
+//					result = left + right;
+//					return result;
+//				}
+//				case '-' :{
+//					
+//				}
 //			}
-//			
-		}
-		return result;
-	}
-	public static void main(String[] args) {
+//		return result;
+//	}
+	public static void main(String[] args) throws Exception{
 		Scanner sc = new Scanner(System.in);
 		// 10개의 테스트 케이스 반복
 		for(int test_case = 1; test_case <= 10; test_case++) {
@@ -72,6 +74,7 @@ public class d4_1232 {
 			result = 0;
 			System.out.println("#" + test_case + " " + result);
 		}
+		sc.close();
 	}
 
 }
