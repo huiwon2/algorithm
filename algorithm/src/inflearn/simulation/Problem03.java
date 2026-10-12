@@ -45,7 +45,7 @@ public class Problem03 {
 			}
 		}
 		// time이 10000분 이후에도 강아지를 찾지 못했다면 
-		if(time == 10001) {
+		if(time >= 10000) {
 			time = 0;
 		}
 		return time;
