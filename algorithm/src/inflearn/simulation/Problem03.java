@@ -12,36 +12,45 @@ public class Problem03 {
 		int[] dy = {0, 1, 0, -1}; // {0, 1, 0, -1}
 		int h_direct = 0;
 		int d_direct = 0;
-		
+
 		// 10000분의 제한 시간 동안 강아지 찾기 start
-		for (time = 1; time < 100001; time++) {
+		for (time = 0; time < 10000; time++) {
 			// 현수 이동 
 			int h_next_x = hyunsuX + dx[h_direct];
 			int h_next_y = hyunsuY + dy[h_direct];
-			
-			// 벽에 부딪히거나 나무에 부딪혔을 때 
-			if(h_next_x < 0 || h_next_x >= board.length || h_next_y < 0 || h_next_y >= board.length || board[h_next_x][h_next_y] == 1) {
-				h_direct = (h_direct + 1) % 4;
-			}else {
-				hyunsuX = h_next_x;
-				hyunsuY = h_next_y;
-			}
 			
 			// 강아지 이동
 			int d_next_x = dogX + dx[d_direct];
 			int d_next_y = dogY + dy[d_direct];
 			
+			boolean flag1 = true;
+			boolean flag2 = true;
+			
+			// 벽에 부딪히거나 나무에 부딪혔을 때 
+			if(h_next_x < 0 || h_next_x >= board.length || h_next_y < 0 || h_next_y >= board.length || board[h_next_x][h_next_y] == 1) {
+				h_direct = (h_direct + 1) % 4;
+				flag1 = false;
+			}
+			
 			// 벽에 부딪히거나 나무에 부딪혔을 때 
 			if(d_next_x < 0 || d_next_x >= board.length || d_next_y < 0 || d_next_y >= board.length || board[d_next_x][d_next_y] == 1) {
 				d_direct = (d_direct + 1) % 4;
-			}else {
+				flag2 = false;
+			}
+			
+			if(flag1){
+				hyunsuX = h_next_x;
+				hyunsuY = h_next_y;
+			}
+			
+			if(flag2){
 				dogX = d_next_x;
 				dogY = d_next_y;
 			}
 			
 			// 개와 현수의 위치가 같아지면 
 			if(h_next_x == d_next_x && h_next_y == d_next_y) {
-				return time;
+				break;
 			}
 		}
 		// time이 10000분 이후에도 강아지를 찾지 못했다면 
