@@ -47,7 +47,7 @@ public class Problem08 {
 		for (int i = 0; i < enter.length; i++) {
 			for(int j = i+1; j < enter.length; j++) {
 				// 만나지 않는 경우를 not으로 처리해 만나는 경우만 체크한다.
-				if(!(exit[j] < enter[i] || exit[i] < enter[j])) {
+				if(!(exitTime[j] < enterTime[i] || exitTime[i] < enterTime[j])) {
 					answer[i] ++;
 					answer[j] ++;
 				}
